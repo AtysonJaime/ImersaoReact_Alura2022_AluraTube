@@ -2,6 +2,7 @@
   "name": "Atyson Jaime",
   "job": "Desenvolvedor Front-End Web",
   "github": "AtysonJaime",
+  "banner": "https://images.unsplash.com/photo-1637567068269-df5225247a79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   "playlists": {
     "jogos": [
       {
@@ -10,125 +11,116 @@
         "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
       },
       {
-        "title": "Frostpunk - Neve e Steak tartare",
-        "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
-        "thumb": "https://img.youtube.com/vi/O8jtAyPuhNg/hqdefault.jpg"
+        "title": "SpiderHeck - Treta de aranha!",
+        "url": "https://www.youtube.com/watch?v=so5yLTYml9A",
+        "thumb": "https://img.youtube.com/vi/so5yLTYml9A/hqdefault.jpg"
       },
       {
-        "title": "Gas Station Simulator - 8 dias sem dormir!",
-        "url": "https://www.youtube.com/watch?v=R1d0DyRDG_Q",
-        "thumb": "https://img.youtube.com/vi/R1d0DyRDG_Q/hqdefault.jpg"
+        "title": "Fusion craft do draconic evolution automatizado",
+        "url": "https://www.youtube.com/watch?v=3oMvwU2MjFc",
+        "thumb": "https://img.youtube.com/vi/3oMvwU2MjFc/hqdefault.jpg"
       },
       {
-        "title": "Gartic Phone - Não assista a esse NerdPlayer!",
-        "url": "https://www.youtube.com/watch?v=0oJQUs5oRiM",
-        "thumb": "https://img.youtube.com/vi/0oJQUs5oRiM/hqdefault.jpg"
+        "title": "Nofaxuland - COMO CONSEGUIR 532.000 ESMERALDAS EM MENOS DE 1H!!! - E68 (Minecraft Mods 1.18)",
+        "url": "https://www.youtube.com/watch?v=VSBgDXVmGI8",
+        "thumb": "https://img.youtube.com/vi/VSBgDXVmGI8/hqdefault.jpg"
       },
       {
-        "title": "Netdecking Estraga o Magic?",
-        "url": "https://www.youtube.com/watch?v=dXihyhYEsEc",
-        "thumb": "https://img.youtube.com/vi/dXihyhYEsEc/hqdefault.jpg"
+        "title": "TUDO que você PRECISA SABER sobre o MOD XNET!!! - Tutorial Minecraft Mod [2022]",
+        "url": "https://www.youtube.com/watch?v=VeOTgBXJxS0",
+        "thumb": "https://img.youtube.com/vi/VeOTgBXJxS0/hqdefault.jpg"
       },
       {
-        "title": "Cities: Skylines - EPCOTAB, o futuro de Saint Laurrent",
-        "url": "https://www.youtube.com/watch?v=zybKHMgLCWU",
-        "thumb": "https://img.youtube.com/vi/zybKHMgLCWU/hqdefault.jpg"
-      },
-      {
-        "title": "We Were Here Together - Os Enigmas deste Mundo",
-        "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
-        "thumb": "https://img.youtube.com/vi/UKgQsrHUG40/hqdefault.jpg"
-      },
-      {
-        "title": "Microsoft Flight Simulator - Top Gun: Oceania - Missão RJ!",
-        "url": "https://www.youtube.com/watch?v=n3TneUb5c-w",
-        "thumb": "https://img.youtube.com/vi/n3TneUb5c-w/hqdefault.jpg"
+        "title": "alanzoka jogando DayZ Fundo de Quintal - #1",
+        "url": "https://www.youtube.com/watch?v=si0GMSjLSH4",
+        "thumb": "https://img.youtube.com/vi/si0GMSjLSH4/hqdefault.jpg"
       }
     ],
-    "front-end": [
+    "Vlogs": [
       {
-        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-        "url": "https://youtube.com/watch?v=jOAU81jdi-c",
-        "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+        "title": "GOD OF WAR RAGNAROK - REVIEW COMPLETO COM NOVA GAMEPLAY! MELHOR GOD OF WAR DE TODOS?",
+        "url": "https://www.youtube.com/watch?v=oDCpEycVaSs",
+        "thumb": "https://img.youtube.com/vi/oDCpEycVaSs/hqdefault.jpg"
       },
       {
-        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-        "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
-        "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
+        "title": "AS CONSEQUÊNCIAS DAS MANIFESTAÇÕES PARA MIM - ESTOU PREOCUPADO!",
+        "url": "https://www.youtube.com/watch?v=KgmRFnq37Ek",
+        "thumb": "https://img.youtube.com/vi/KgmRFnq37Ek/hqdefault.jpg"
       },
       {
-        "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
-        "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
-        "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
+        "title": "ELE JOGOU MAIS DE 12 HORAS DE GOD OF WAR 3 PARA OUVIR ISSO 🤣",
+        "url": "https://www.youtube.com/watch?v=t2MgOezWr8U",
+        "thumb": "https://img.youtube.com/vi/t2MgOezWr8U/hqdefault.jpg"
       },
       {
-        "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
-        "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
-        "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
+        "title": "DOUGLAS DORMIU NO MEIO DA GAMEPLAY DE GOD OF WAR 4 🤣",
+        "url": "https://www.youtube.com/watch?v=TqYMUlCfajc",
+        "thumb": "https://img.youtube.com/vi/TqYMUlCfajc/hqdefault.jpg"
       },
       {
-        "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
-        "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
-        "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
-      },
-      {
-        "title": "Como Foi Programado um App Que Faz Mágica",
-        "url": "https://www.youtube.com/watch?v=I36seuWUe5s",
-        "thumb": "https://img.youtube.com/vi/I36seuWUe5s/hqdefault.jpg"
-      },
-      {
-        "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
-        "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
-        "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
-      },
-      {
-        "title": "5 Erros Históricos do CSS",
-        "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
-        "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
-      },
-      {
-        "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
-        "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
-        "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
+        "title": "JEFFINHO CONTA A HISTORIA DO KID GALÃO (CortesDoJeffinho)",
+        "url": "https://www.youtube.com/watch?v=H0B2Scmag4I",
+        "thumb": "https://img.youtube.com/vi/H0B2Scmag4I/hqdefault.jpg"
       }
     ],
-    "back-end": [
+    "PODCAST": [
       {
-        "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-        "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-        "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
+        "title": "GOD OF WAR RAGNAROK - ANÁLISE SEM SPOILERS!",
+        "url": "https://www.youtube.com/watch?v=XenyyUYIncM",
+        "thumb": "https://img.youtube.com/vi/XenyyUYIncM/hqdefault.jpg"
       },
       {
-        "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-        "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-        "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
-      },
-
-      {
-        "title": "O que é o Java? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
-        "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
+        "title": "VITOR METAFORANDO - Flow Podcast #154",
+        "url": "https://www.youtube.com/watch?v=tHbFukPmM9s",
+        "thumb": "https://img.youtube.com/vi/tHbFukPmM9s/hqdefault.jpg"
       },
       {
-        "title": "O que é Machine Learning? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
-        "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
+        "title": "REAGINDO AO SUBMUNDO DO TIKTOK | Só 1 Minutinho",
+        "url": "https://www.youtube.com/watch?v=DN2LU5KGdwM",
+        "thumb": "https://img.youtube.com/vi/DN2LU5KGdwM/hqdefault.jpg"
       },
       {
-        "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
-        "thumb": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
-      },
-      {
-        "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
-        "thumb": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg"
-      },
-      {
-        "title": "O que é o C#? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
-        "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
+        "title": "Leandro Ramos e Paulinho Serra | Só 1 Minutinho",
+        "url": "https://www.youtube.com/watch?v=7wJLArJ0exY",
+        "thumb": "https://img.youtube.com/vi/7wJLArJ0exY/hqdefault.jpg"
       }
     ]
-  }
+  },
+  "favorites": [
+    {
+      "name": "Rato Borrachudo",
+      "url": "https://www.youtube.com/user/broudouglas",
+      "userImage": "https://yt3.ggpht.com/ytc/AMLnZu9b6aQw5uy4y7jl4V0hgwdAB1SGSk4qiQbXh3rWUg=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "Canal Nostalgia",
+      "url": "https://www.youtube.com/nostalgia",
+      "userImage": "https://yt3.ggpht.com/ytc/AMLnZu9bpLnR21UR8dFOD8Tj1ou7cOLOCFwdNwNk_aDBVQ=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "Cavaco",
+      "url": "https://www.youtube.com/c/CavacoGamer",
+      "userImage": "https://yt3.ggpht.com/UNGkzUWMFnO3ebwm4zez7TyJq6mLqsRNotH43y1e2m0IqyuC0MwLhZb1b_yUAAT-Fb7odb5o=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "Sev7n",
+      "url": "https://www.youtube.com/c/Sev7n",
+      "userImage": "https://yt3.ggpht.com/mU7hvC1i-mI_1UMvJcJ39uta1wn-Czghv9KxHgVKT78PQKh-Fa7Rj-RiiAtW8B6KNEBZbWepPlU=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "ChratosGameplay",
+      "url": "https://www.youtube.com/c/ChratosGameplay",
+      "userImage": "https://yt3.ggpht.com/ytc/AMLnZu9WYyESkDxKd1ISQ3spv4ogSs6M8L1v7aCXb-yhqQ=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "Gaveta",
+      "url": "https://www.youtube.com/user/andersongaveta",
+      "userImage": "https://yt3.ggpht.com/1uUc5OT51KnlcmN4nAcM-Wr3QSF6aLtp2IONCGHpleaZ6wjoU1inAQ21tdrXu2OxP1r9eyuRgA=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "name": "Mario Souto - Dev Soutinho",
+      "url": "https://www.youtube.com/c/DevSoutinho",
+      "userImage": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj"
+    }
+  ]
 }

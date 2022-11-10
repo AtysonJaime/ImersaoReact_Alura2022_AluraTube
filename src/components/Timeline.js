@@ -30,7 +30,7 @@ export const StyledTimeline = styled.div`
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px, 1fr);
-      overflow-x: scroll;
+      overflow-x: auto;
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
@@ -42,5 +42,68 @@ export const StyledTimeline = styled.div`
         }
       }
     }
+    .card-favorites {
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        span {
+          padding-right: 0;
+        }
+      }
+    }
   }
 `;
+
+// Aqui estou recendo os dados passados nessa variaveis props
+export default function Timeline(props) {
+  // Pegar os nomes das keys do object
+  const playlistsNames = Object.keys(props.playlists);
+  const canaisFavorites = props.favorites;
+  // Vai ser .map o tempo tempo!!
+  return (
+    <StyledTimeline>
+      {playlistsNames.map((playlistsName) => {
+        const videos = props.playlists[playlistsName];
+        return (
+          <section key={playlistsName}>
+            <h2>{playlistsName}</h2>
+            <div>
+              {videos.map((video) => {
+                return (
+                  <a
+                    href={video.url}
+                    key={video.url}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src={video.thumb} />
+                    <span>{video.title}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+      <section>
+        <h2>Canais Favoritos</h2>
+        <div className="card-favorites">
+          {canaisFavorites.map((card) => {
+            return (
+              <a href={card.url} key={card.url} target="_blank" rel="noopener">
+                <img src={card.userImage} />
+                <span>{card.name}</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    </StyledTimeline>
+  );
+}

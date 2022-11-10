@@ -2,7 +2,8 @@ import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
-import { StyledTimeline } from "../src/components/Timeline";
+import Timeline from "../src/components/Timeline";
+
 // Esse é um meio base como um arquivo react funciona
 // Para ele rodar,precisa estar em uma pasta chamada page
 function HomePage() {
@@ -16,9 +17,9 @@ function HomePage() {
       <CSSReset />
       <div>
         <Menu />
-        <Header />
+        <Header banner={config.banner} />
         {/* Aqui estou passando uma props */}
-        <Timeline playlists={config.playlists} />
+        <Timeline playlists={config.playlists} favorites={config.favorites} />
       </div>
     </>
   );
@@ -27,13 +28,18 @@ export default HomePage;
 
 // Criar o style do componente
 const StyledHeader = styled.div`
-  img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  .user-banner {
+    margin-top: 50px;
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
   }
   .user-info {
-    margin-top: 50px;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
     display: flex;
     align-items: center;
     width: 100%;
@@ -41,12 +47,16 @@ const StyledHeader = styled.div`
     gap: 16px;
   }
 `;
-function Header() {
+function Header(props) {
   // Para chamar variavies utiliza {}
   // Para comentar algo so dar ctrl K + ctrl C
   return (
     <StyledHeader>
-      {/* <img src="banner" />*/}
+      <img
+        className="user-banner"
+        alt="Montanhas ao entardescer"
+        src={props.banner}
+      />
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
@@ -55,35 +65,5 @@ function Header() {
         </div>
       </section>
     </StyledHeader>
-  );
-}
-
-// Aqui estou recendo os dados passados nessa variaveis props
-function Timeline(props) {
-  console.log(props.playlists);
-  // Pegar os nomes das keys do object
-  const playlistsNames = Object.keys(props.playlists);
-  // Vai ser .map o tempo tempo!!
-  return (
-    <StyledTimeline>
-      {playlistsNames.map((playlistsName) => {
-        const videos = props.playlists[playlistsName];
-        return (
-          <section>
-            <h2>{playlistsName}</h2>
-            <div>
-              {videos.map((video) => {
-                return (
-                  <a href={video.url}>
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
-                );
-              })}
-            </div>
-          </section>
-        );
-      })}
-    </StyledTimeline>
   );
 }
