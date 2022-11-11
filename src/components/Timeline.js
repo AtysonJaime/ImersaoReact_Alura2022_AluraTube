@@ -74,19 +74,17 @@ export default function Timeline(props) {
           <section key={playlistsName}>
             <h2>{playlistsName}</h2>
             <div>
-              {videos.map((video) => {
-                return (
-                  <a
-                    href={video.url}
-                    key={video.url}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
-                );
-              })}
+              {videos.map((video) => (
+                <a
+                  href={video.url}
+                  key={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={video.thumb} />
+                  <span>{video.title}</span>
+                </a>
+              ))}
             </div>
           </section>
         );
@@ -94,14 +92,17 @@ export default function Timeline(props) {
       <section>
         <h2>Canais Favoritos</h2>
         <div className="card-favorites">
-          {canaisFavorites.map((card) => {
-            return (
-              <a href={card.url} key={card.url} target="_blank" rel="noopener">
-                <img src={card.userImage} />
-                <span>{card.name}</span>
-              </a>
-            );
-          })}
+          {canaisFavorites.map((card) => (
+            <a
+              href={card.url}
+              key={card.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={card.userImage} />
+              <span>{card.name}</span>
+            </a>
+          ))}
         </div>
       </section>
     </StyledTimeline>

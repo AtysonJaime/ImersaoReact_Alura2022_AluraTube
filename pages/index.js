@@ -1,5 +1,5 @@
-import config from "../config.json";
 import styled from "styled-components";
+import config from "../config.json";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import Timeline from "../src/components/Timeline";
@@ -8,11 +8,11 @@ import Timeline from "../src/components/Timeline";
 // Para ele rodar,precisa estar em uma pasta chamada page
 function HomePage() {
   // Criação de variaveis antes do return
-  //const estilosDaHomePage = { backgroundColor: "red" };
+  // const estilosDaHomePage = { backgroundColor: "red" };
 
   return (
     // Para craiação de estilização, utiliza como se fosse em chaves
-    //<div style={estilosDaHomePage}>
+    // <div style={estilosDaHomePage}>
     <>
       <CSSReset />
       <div>
