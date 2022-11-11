@@ -61,7 +61,7 @@ export const StyledTimeline = styled.div`
 `;
 
 // Aqui estou recendo os dados passados nessa variaveis props
-export default function Timeline(props) {
+export default function Timeline({ searchValue, ...props }) {
   // Pegar os nomes das keys do object
   const playlistsNames = Object.keys(props.playlists);
   const canaisFavorites = props.favorites;
@@ -74,17 +74,28 @@ export default function Timeline(props) {
           <section key={playlistsName}>
             <h2>{playlistsName}</h2>
             <div>
-              {videos.map((video) => (
-                <a
-                  href={video.url}
-                  key={video.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={video.thumb} />
-                  <span>{video.title}</span>
-                </a>
-              ))}
+              {/* 
+                Para filtrar alguma lista com os itens que eu quero, coloca-se .filter antes do map;
+                Aqui é JS puro!
+                Utilizar o qooka para separa as coisas e ajudar em detalhes
+              */}
+              {videos
+                .filter((video) => {
+                  const titleNormalized = video.title.toLowerCase();
+                  const searchValueNormalized = searchValue.toLowerCase();
+                  return titleNormalized.includes(searchValueNormalized);
+                })
+                .map((video) => (
+                  <a
+                    href={video.url}
+                    key={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={video.thumb} />
+                    <span>{video.title}</span>
+                  </a>
+                ))}
             </div>
           </section>
         );
