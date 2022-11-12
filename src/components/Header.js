@@ -2,12 +2,7 @@ import styled from "styled-components";
 import config from "../../config.json";
 
 const StyledHeader = styled.div`
-  .user-banner {
-    margin-top: 50px;
-    height: 230px;
-    width: 100%;
-    object-fit: cover;
-  }
+  background-color: ${({ theme }) => theme.backgroundLevel1};
   .user-info {
     img {
       width: 80px;

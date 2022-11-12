@@ -1,7 +1,32 @@
-// Esse é um componente
+import React from "react";
 import styled from "styled-components";
-import Search from "./components/Search";
-import DarkModeSwitch from "./components/DarkModeSwitch";
+import { useRouter } from "next/router";
+import config from "../../config.json";
+import Header from "../../src/components/Header";
+import DarkModeSwitch from "../../src/components/Menu/components/DarkModeSwitch";
+
+// Esse é um meio base como um arquivo react funciona
+// Para ele rodar,precisa estar em uma pasta chamada page
+function VideoPage() {
+  const router = useRouter();
+  const { id } = router.query;
+  return (
+    <>
+      <div style={{ width: "100%" }}>
+        {/* Prop Drilling*/}
+        <Menu />
+        <Header
+          banner={config.banner}
+          name={config.name}
+          github={config.github}
+          job={config.job}
+        />
+        <Video id={id} />
+      </div>
+    </>
+  );
+}
+export default VideoPage;
 
 const StyledMenu = styled.header`
   display: flex;
@@ -28,16 +53,16 @@ const StyledMenu = styled.header`
 `;
 
 // Precisa ir passando os states para os componentes filhos
-export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
+function Menu() {
+  const voltar = `<`;
   return (
     <StyledMenu>
+      <a href="/" title="Voltar para página inicial">
+        ⬅️
+      </a>
       <div>
         <Logo />
       </div>
-      <Search
-        valorDoFiltro={valorDoFiltro}
-        setValorDoFiltro={setValorDoFiltro}
-      />
       <DarkModeSwitch />
     </StyledMenu>
   );
@@ -87,5 +112,37 @@ function Logo() {
         fill="#282828"
       />
     </svg>
+  );
+}
+
+function Video({ id }) {
+  const StyledVideo = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+
+    iframe {
+      width: 90%;
+      height: 90%;
+    }
+  `;
+
+  const embedVideo = `https://www.youtube.com/embed/${id}`;
+
+  return (
+    <StyledVideo>
+      <iframe
+        width="560"
+        height="315"
+        src={embedVideo}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </StyledVideo>
   );
 }

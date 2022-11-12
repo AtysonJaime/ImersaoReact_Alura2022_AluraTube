@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/badge/Atysonjaime-FavTube-red)
 ![GitHub](https://img.shields.io/github/license/atysonjaime/ImersaoReact_Alura2022_AluraTube)
 
-> 🚀 Repositório destinado a construção de uma replica do youtube utilizando React e Next desenvolvido Imersão React 2022 proporcionado pela Alura.
+> 🚀 Repositório destinado a construção de uma replica do youtube utilizando React e Next desenvolvido na Imersão React 2022 proporcionado pela Alura.
 
 ## 💻 Tecnológias
 

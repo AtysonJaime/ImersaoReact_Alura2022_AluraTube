@@ -85,17 +85,15 @@ export default function Timeline({ searchValue, ...props }) {
                   const searchValueNormalized = searchValue.toLowerCase();
                   return titleNormalized.includes(searchValueNormalized);
                 })
-                .map((video) => (
-                  <a
-                    href={video.url}
-                    key={video.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
-                ))}
+                .map((video) => {
+                  const linkVideo = `/videos/${video.url}`;
+                  return (
+                    <a href={linkVideo} key={video.url}>
+                      <img src={video.thumb} />
+                      <span>{video.title}</span>
+                    </a>
+                  );
+                })}
             </div>
           </section>
         );

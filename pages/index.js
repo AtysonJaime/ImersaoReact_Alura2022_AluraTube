@@ -1,6 +1,5 @@
 import React from "react";
 import config from "../config.json";
-import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import Timeline from "../src/components/Timeline";
 import Header from "../src/components/Header";
@@ -17,7 +16,6 @@ function HomePage() {
     // Para craiação de estilização, utiliza como se fosse em chaves
     // <div style={estilosDaHomePage}>
     <>
-      <CSSReset />
       <div>
         {/* Prop Drilling*/}
         <Menu
@@ -41,53 +39,3 @@ function HomePage() {
   );
 }
 export default HomePage;
-
-// Criar o style do componente
-// const StyledHeader = styled.div`
-//   .user-banner {
-//     margin-top: 50px;
-//     height: 230px;
-//     width: 100%;
-//     object-fit: cover;
-//   }
-//   .user-info {
-//     img {
-//       width: 80px;
-//       height: 80px;
-//       border-radius: 50%;
-//     }
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//     padding: 16px 32px;
-//     gap: 16px;
-//   }
-// `;
-
-// const StyledBanner = styled.div`
-//   background-color: blue;
-//   //background-image: url(${config.banner});
-//   height: 230px;
-// `;
-// function Header(props) {
-//   // Para chamar variavies utiliza {}
-//   // Para comentar algo so dar ctrl K + ctrl C
-//   console.log(props);
-//   return (
-//     <StyledHeader>
-//       {/* <img
-//         className="user-banner"
-//         alt="Montanhas ao entardescer"
-//         src={props.banner}
-//       /> */}
-//       <StyledBanner />
-//       <section className="user-info">
-//         <img src={`https://github.com/${config.github}.png`} />
-//         <div>
-//           <h2>{config.name}</h2>
-//           <p>{config.job}</p>
-//         </div>
-//       </section>
-//     </StyledHeader>
-//   );
-// }
