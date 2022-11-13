@@ -24,4 +24,4 @@ O projeto encontra-se hospedado na [Vercel](https://vercel.com/), plataforma rec
 
 ## 📝 Licença
 
-[MIT License](https://github.com/AtysonJaime/ImersaoReact_Alura2022_AluraTube/blob/main/LICENCE.md) © [Atyson Jaime](https://atysonjaime.github.io)
+[MIT License](https://github.com/AtysonJaime/ImersaoReact_Alura2022_AluraTube/blob/main/LICENCE) © [Atyson Jaime](https://atysonjaime.github.io)

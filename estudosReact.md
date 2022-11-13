@@ -25,3 +25,5 @@ React.useState("");
 - é Melhor ter varios provides que resolvar pequenas coisas especificas, do que apenas um que resolva tudo.
 
 - Contexto deve ser importado com {}
+
+- Hooks(React.useState(), React.useContext())
