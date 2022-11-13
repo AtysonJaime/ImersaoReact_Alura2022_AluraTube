@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 import React from "react";
+import { videoService } from "../../services/videoService";
 import { StyledRegisterVideo } from "./styles";
 
 // Criando um Hook proprio
@@ -8,6 +10,7 @@ function useForm({ validate, ...propsDoForm }) {
   const [errors, setErros] = React.useState({});
   const [touched, setTouched] = React.useState({});
 
+  // Roda quando um estado é alterado
   React.useEffect(() => {
     validadeFieldInput(values);
   }, [values]);
@@ -59,7 +62,7 @@ function useForm({ validate, ...propsDoForm }) {
 
 export default function RegisterVideo() {
   const formCadastro = useForm({
-    initialValues: { titulo: "", url: "" },
+    initialValues: { titulo: "", url: "", playlist: "" },
     validate: (values) => {
       const errors = {};
       const regex =
@@ -72,10 +75,14 @@ export default function RegisterVideo() {
       } else if (!regex.test(values.url)) {
         errors.url = "Adicione uma url do youtube valida";
       }
+      if (values.playlist === "") {
+        errors.playlist = "Esse campo é obrigatorio";
+      }
       return errors;
     },
   });
-  const [formVisivel, setFormVisivel] = React.useState(true);
+  const [formVisivel, setFormVisivel] = React.useState(false);
+  const service = videoService();
 
   /*
     # Sempre se preocupar com o que vai fazer!
@@ -104,6 +111,10 @@ export default function RegisterVideo() {
         <form
           onSubmit={(event) => {
             event.preventDefault();
+            service.postVideo({
+              values: formCadastro.values,
+              thumb: formCadastro.thumb,
+            });
             setFormVisivel(false);
             formCadastro.clearForm();
             formCadastro.setErros({});
@@ -111,7 +122,7 @@ export default function RegisterVideo() {
         >
           <div>
             <button
-              type="buttom"
+              type="button"
               className="close-modal"
               onClick={() => {
                 setFormVisivel(false);
@@ -140,6 +151,19 @@ export default function RegisterVideo() {
             />
             {formCadastro.touched.url && formCadastro.errors.url && (
               <span className="error-input">{formCadastro.errors.url}</span>
+            )}
+            <input
+              type="text"
+              name="playlist"
+              placeholder="Digite o nome da playlist (nova ou já existente)"
+              value={formCadastro.values.playlist}
+              onChange={formCadastro.handleChange}
+              onBlur={formCadastro.handlerBlue}
+            />
+            {formCadastro.touched.playlist && formCadastro.errors.playlist && (
+              <span className="error-input">
+                {formCadastro.errors.playlist}
+              </span>
             )}
             <button type="submit">Cadastrar</button>
             {formCadastro.thumb !== "" ? (
